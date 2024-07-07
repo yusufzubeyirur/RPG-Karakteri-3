@@ -53,7 +53,13 @@ export default function App() {
     
     --------------------------------------------------------------------*/
 
-    const [characterData,setCharacterData] = useState({ hat:true , shield:true , weapon:"sword" || "staf" , name:"Lythienne Fenralei" attackOptions:})
+    const [characterData,setCharacterData] = useState({
+    hat:true, 
+    shield:true , 
+    weapon:"sword" , 
+    name:namesList[10],
+    attackOptions:attackOptionsList.slice(0,6), 
+    stats:{hp:99, mp:99 , strength:99 }})
 
   let dataToUse, functionToUse
 
